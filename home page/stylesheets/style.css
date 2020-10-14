@@ -8,18 +8,15 @@ main {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
 }
 
 header {
     background-color: black;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-shrink: 0;
     align-items: center;
-
     padding: 20px 10px;
     font-size: 27px;
 }
