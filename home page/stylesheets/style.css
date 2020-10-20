@@ -21,12 +21,16 @@ header {
     font-size: 27px;
 }
 
-header img {
+header > a {
     width: 20%;
-    min-width: 200px;
+    min-width: 200px; 
 }
 
-header a {
+header > a img {
+    width: 100%;
+}
+
+header nav a {
     color: white;
     padding: 0 5px;
 }
