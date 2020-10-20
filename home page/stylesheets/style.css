@@ -39,3 +39,8 @@ main > div {
     background-color: #161616;
     flex-grow: 1;
 }
+
+h2 {
+    font-family: hacked;
+    src: local('fonts/Hacked/HACKED.ttf');
+}
