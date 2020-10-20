@@ -43,4 +43,9 @@ main > div {
 h2 {
     font-family: hacked;
     src: local('fonts/Hacked/HACKED.ttf');
+
+    color: white;
+    font-size: 200px;
+
+    text-align: center;
 }
