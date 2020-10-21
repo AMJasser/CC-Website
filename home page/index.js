@@ -1,22 +1,12 @@
-let delta = 0;
-let lastY = 0;
+let y = 0;
 
 let selectedText = document.getElementsByTagName('h2');
 
 
-window.addEventListener('scroll', noScroll);
+window.addEventListener('scroll', scrolling);
 
 function scrolling(event){
-
-    delta += (window.scrollY > lastY) ? 1 : -1;
-
-    let maxScroll = 300;
-
-    selectedText.opacity = (maxScroll - window.scrollY)/maxScroll;
-
-    lastY = window.scrollY;
-
-    console.log('potato: ' + window.scrollY);
+    let delta = window.scrollY;
+    let maxDelta = 300;
+    selectedText.opacity = () 
 }
-
-function noScroll() {   window.scrollTo(0, 0); }
