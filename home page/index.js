@@ -9,7 +9,7 @@ window.addEventListener('scroll', scrolling);
 
 function scrolling(){
     let delta = window.scrollY;
-    let maxDelta = 200;
+    let maxDelta = 500;
     if (delta < maxDelta) {selectedText.style.opacity = (maxDelta - delta)/maxDelta;}
     else {selectedText.style.opacity = 0;}
     //console.log(selectedText.style.opacity); 
