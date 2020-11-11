@@ -35,10 +35,6 @@ header nav a {
   padding: 0 5px;
 }
 
-main > div {
-  background-color: #161616;
-  flex-grow: 1;
-}
 
 .LogoFont {
   font-family: hacked;
@@ -49,7 +45,7 @@ main > div {
 }
 
 #HomeThing {
-  font-size: 200px;
+  font-size: 160px;
   text-align: center;
   margin: 20px;
 }
@@ -63,4 +59,52 @@ main > div {
 
 h3{
     padding: 10px;
+}
+
+.notHeader {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.middleBar {
+  margin: 0 2.5% 0 2.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  text-align: center;
+}
+
+.card {
+  padding: 20px 5px 20px 5px;
+  margin: 15px 5px 15px 5px;
+  border: 1px solid #414141;
+  color: #eeeeee;
+}
+
+.imagePreview {
+  width: 50%;
+}
+
+.card p {
+  padding: 15px;
+}
+
+.card h1 {
+  font-size: 20px;
+}
+
+.card > div {
+  align-self: ;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+}
+
+.middleBar h2 {
+  margin-top: 50px;
+  font-size: 80px;
 }
