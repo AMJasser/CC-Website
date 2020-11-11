@@ -108,3 +108,31 @@ h3{
   margin-top: 50px;
   font-size: 80px;
 }
+
+.member {
+  padding: 20px 5px 20px 5px;
+  margin: 15px 5px 15px 5px;
+  border: 1px solid #414141;
+  color: #eeeeee;
+}
+
+.profilePic {
+  width: 30%;
+}
+
+.member p {
+  padding: 15px;
+}
+
+.member h1 {
+  font-size: 20px;
+}
+
+.member > div {
+  align-self: ;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
