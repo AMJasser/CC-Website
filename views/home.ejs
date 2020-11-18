@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Coding Cave - home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="particle/particles.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="/"><img src="images/logo.png" alt="The Coding Cave"></a>
+            <nav>
+                <a href="/">Home</a>
+                <a>About</a>
+                <a href="/members"> Members</a>
+                <a href="/projects"> projects</a>
+            </nav>
+        </header>
+        <div class="notHeader">
+            <div class="middleBar">
+                <div class="card">
+                    <h2 class="LogoFont" id="HomeThing">
+                        The <br>
+                        Coding <br>
+                        Cave </h2>
+                    <div class="Subheads">
+                        <h3>
+                            To go on account red ensign grog blossom rope's end
+                            careen lanyard dance the hempen jig cable heave down
+                            doubloon water. Mutiny carouser case shot coffer careen list
+                            fire in the hole wench Arr hands stern. Aft Pirate
+                            Round black jack wherry me lanyard draught long boat ye
+                            holystone Jack Tar.
+                        </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/logo.png" alt="Beep">
+                    <img src="images/logo.png" alt="Beep">
+                    <img src="images/logo.png" alt="Beep">
+                    <img src="images/logo.png" alt="Beep">
+                    <img src="images/logo.png" alt="Beep">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        let y = 0;
+
+        let selectedText = document.querySelector("#HomeThing");
+
+
+        window.addEventListener('scroll', scrolling);
+
+        //document.addEventListener("wheel", mouseScroll);
+
+        function scrolling() {
+            let delta = window.scrollY;
+            let maxDelta = 500;
+            if (delta < maxDelta) { selectedText.style.opacity = (maxDelta - delta) / maxDelta; }
+            else { selectedText.style.opacity = 0; }
+            //console.log(selectedText.style.opacity); 
+        }
+
+        let delta = 0;
+
+        function mouseScroll(event) { //For Testing Purposes
+            if (!(delta <= 0 & event.deltaY < 0)) delta += event.deltaY;
+            let maxDelta = 1000;
+            if (delta < maxDelta) {
+                selectedText.style.opacity = (maxDelta - delta) / maxDelta;
+            }
+            else { selectedText.style.opacity = 0; }
+            console.log(event);
+        }
+    </script>
+</body>
+
+</html>
